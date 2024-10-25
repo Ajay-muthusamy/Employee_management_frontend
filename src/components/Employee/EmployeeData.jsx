@@ -166,7 +166,7 @@ const EmployeeData = () => {
             <HoverCardTrigger>
               <div className="employee-card bg-white shadow-lg rounded-lg p-4 flex flex-col items-center cursor-pointer ">
                 <img
-                  src={`http://localhost:3000/uploads/${data.photo}`}
+                  src={`https://employee-management-backend-kjh6.onrender.com/uploads/${data.photo}`}
                   className="employee-photo w-full h-[40vh] object-cover rounded-md mb-4"
                 />
 
