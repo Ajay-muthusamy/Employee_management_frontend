@@ -69,7 +69,7 @@ const AddEmployee = () => {
     });
 
     try {
-      const response = await axios.post("https://employee-management-backend-kjh6.onrender.com/api/users", formDataToSend, {
+      const response = await axios.post("http://localhost:4242/api/users", formDataToSend, {
         headers: {
           "Content-Type": "multipart/form-data",
         },

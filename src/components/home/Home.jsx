@@ -8,7 +8,7 @@ const Home = () => {
   const { setSession } = useClerk(); 
 
   const handleSignIn = async () => {
-    // await setSession({ afterSignInUrl: '/dashboard' });
+    
     navigate('/dashboard');
   };
 
