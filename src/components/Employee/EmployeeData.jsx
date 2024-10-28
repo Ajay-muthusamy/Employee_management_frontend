@@ -50,7 +50,7 @@ const EmployeeData = () => {
     async function fetchData() {
       try {
         const response = await axios.get(
-          "http://localhost:4242/Em/employee-fetch"
+          "https://employee-management-backend-kjh6.onrender.com/Em/employee-fetch"
         );
         setEmployees(response.data);
         setLoading(false);
@@ -79,7 +79,7 @@ const EmployeeData = () => {
     e.preventDefault();
     console.log(recipient,subject,text);
     try {
-      const res = await axios.post("http://localhost:4242/api/send-email", {
+      const res = await axios.post("https://employee-management-backend-kjh6.onrender.com/api/send-email", {
         recipient,
         subject,
         text,
@@ -194,7 +194,7 @@ const EmployeeData = () => {
                 onClick={() => setRecipient(data.email)}
               >
                 <img
-                  src={`http://localhost:4242/uploads/${data.photo}`}
+                  src={`https://employee-management-backend-kjh6.onrender.com/uploads/${data.photo}`}
                   className="employee-photo w-full h-[40vh] object-cover rounded-md mb-4"
                 />
                 <div className="text-center">
