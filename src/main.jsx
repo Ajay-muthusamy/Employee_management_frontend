@@ -6,7 +6,7 @@ import { ClerkProvider } from "@clerk/clerk-react";
 import './global.css'
 
 
-const PUBLISHABLE_KEY = "pk_test_ZGVmaW5pdGUtbXVza294LTcxLmNsZXJrLmFjY291bnRzLmRldiQ";
+const PUBLISHABLE_KEY = process.env.clerk;
 
 
 if (!PUBLISHABLE_KEY) {
